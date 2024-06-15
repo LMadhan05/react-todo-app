@@ -1,9 +1,12 @@
 import React from 'react'
 
 export default function (props) {
-  let todos = props.todos;
-  const handleDeleteTodos = props.handleDeleteTodos;
-  const handleEditTodos = props.handleEditTodos;
+  // let todos = props.todos;
+  // const handleDeleteTodos = props.handleDeleteTodos;
+  // const handleEditTodos = props.handleEditTodos;
+
+  const {todos , handleDeleteTodos , handleEditTodos} = props;
+
   return (
     todos.map((todo,todoIndex) => {
       return <div className = "actionContainer">
